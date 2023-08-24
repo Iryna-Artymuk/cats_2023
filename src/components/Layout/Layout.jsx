@@ -9,7 +9,6 @@ import gallery from '../../images/images-search.png';
 import {
   Container,
   StyledBreedsCard,
-
   StyledGalleryCard,
   StyledLink,
   StyledList,
@@ -17,7 +16,7 @@ import {
   StyledlogoWrapper,
   Stylednav,
 } from './StyledLayout';
-import {useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { ROUTES } from 'utils/routes';
 
 const Layout = ({ children, handleThemeChange }) => {
