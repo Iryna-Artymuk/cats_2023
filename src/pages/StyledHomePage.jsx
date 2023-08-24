@@ -14,11 +14,7 @@ width: 680px;
     background-color: ${({ theme }) => theme.colors.accentColor2};
     border-radius: 5px;
     outline: 2px solid green;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  
    
    `
   

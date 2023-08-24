@@ -7,10 +7,17 @@ export const light = {
     accentColor2: '#FBE0DC',
     colorGreen: '#97EAB9',
     colorYellow: '#FFD280',
+    colorPurple: '#B4B7FF',
     colorWhite: '#FFF',
     textColor: '#8C8C8C',
     hoverTextColor: '#fff',
     errorTextColor: '#C73E1D',
+    buttonDefaultBGColor: '#fff',
+    buttonDefaultColor: '#FF868E',
+    buttonHoverBGColor: '#FBE0DC',
+    buttonHoverColor: '#FF868E',
+    buttonActiveBGColor: '#FF868E',
+    buttonActiveColor: '#FFFFFF',
   },
 };
 
