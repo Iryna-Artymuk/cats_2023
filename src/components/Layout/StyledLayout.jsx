@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
@@ -20,7 +20,7 @@ export const Stylednav = styled.nav`
   outline: 2px solid green;
   span {
     font-size: 44px;
-    color: #1d1d1d ;
+    color: #1d1d1d;
   }
 `;
 export const StyledlogoWrapper = styled.div`
@@ -69,7 +69,7 @@ export const StyledBreedsCard = styled(StyledCard)`
 export const StyledGalleryCard = styled(StyledCard)`
   background-color: ${({ theme }) => theme.colors.colorYellow};
 `;
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   width: 138px;
   height: 16px;
   display: block;
@@ -83,7 +83,7 @@ export const StyledLink = styled(Link)`
     background-color: ${({ theme }) => theme.colors.buttonHoverBGColor};
     color: ${({ theme }) => theme.colors.buttonHoverColor};
   }
-  &:active {
+  &.active {
     background-color: ${({ theme }) => theme.colors.buttonActiveBGColor};
     color: ${({ theme }) => theme.colors.buttonActiveColor};
   }
