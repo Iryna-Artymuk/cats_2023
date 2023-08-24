@@ -18,7 +18,10 @@ export const Stylednav = styled.nav`
   height: 450px;
 
   outline: 2px solid green;
-
+  span {
+    font-size: 44px;
+    color: #1d1d1dпше ;
+  }
 `;
 export const StyledlogoWrapper = styled.div`
   width: 106px;
@@ -26,6 +29,17 @@ export const StyledlogoWrapper = styled.div`
   margin-top: 36px;
   margin-bottom: 80px;
 `;
+export const StyledGreeting = styled.p`
+  margin-bottom: 60px;
+  margin-top: 10px;
+  font-size: 20px;
+`;
+export const StyledText = styled.p`
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1d1d1d;
+`;
+
 export const StyledList = styled.ul`
   display: flex;
   align-items: center;

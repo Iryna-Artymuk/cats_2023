@@ -10,8 +10,10 @@ import {
   Container,
   StyledBreedsCard,
   StyledGalleryCard,
+  StyledGreeting,
   StyledLink,
   StyledList,
+  StyledText,
   StyledVotingCard,
   StyledlogoWrapper,
   Stylednav,
@@ -24,43 +26,44 @@ const Layout = ({ children, handleThemeChange }) => {
   return (
     <Container>
       <ChangeThemeButton handleThemeChange={handleThemeChange} />
+      <div>
+        <StyledlogoWrapper>
+          <img src={logo} alt="logo" />
+        </StyledlogoWrapper>
+        <Stylednav>
+          <span>HI</span>
 
-      <StyledlogoWrapper>
-        <img src={logo} alt="logo" />
-      </StyledlogoWrapper>
-      <Stylednav>
-        <img src={greeting} height={58} alt="" />
+          <StyledGreeting>Welcome to MacPaw Bootcamp 2023</StyledGreeting>
+          <StyledText>Lets start using The Cat API</StyledText>
 
-        <p>Welcome to MacPaw Bootcamp 2023</p>
-        <p>Lets start using The Cat API</p>
-
-        <StyledList>
-          <li>
-            <StyledVotingCard>
-              <img src={voting} alt="" />
-            </StyledVotingCard>
-            <StyledLink state={{ from: location }} to={ROUTES.VOTING}>
-              Voting
-            </StyledLink>
-          </li>
-          <li>
-            <StyledBreedsCard>
-              <img src={breeds} alt="" />{' '}
-            </StyledBreedsCard>
-            <StyledLink state={{ from: location }} to={ROUTES.BREEDS}>
-              Breeds
-            </StyledLink>
-          </li>
-          <li>
-            <StyledGalleryCard>
-              <img src={gallery} alt="" />{' '}
-            </StyledGalleryCard>
-            <StyledLink state={{ from: location }} to={ROUTES.GALLERY}>
-              Gallery
-            </StyledLink>
-          </li>
-        </StyledList>
-      </Stylednav>
+          <StyledList>
+            <li>
+              <StyledVotingCard>
+                <img src={voting} alt="" />
+              </StyledVotingCard>
+              <StyledLink state={{ from: location }} to={ROUTES.VOTING}>
+                Voting
+              </StyledLink>
+            </li>
+            <li>
+              <StyledBreedsCard>
+                <img src={breeds} alt="" />{' '}
+              </StyledBreedsCard>
+              <StyledLink state={{ from: location }} to={ROUTES.BREEDS}>
+                Breeds
+              </StyledLink>
+            </li>
+            <li>
+              <StyledGalleryCard>
+                <img src={gallery} alt="" />{' '}
+              </StyledGalleryCard>
+              <StyledLink state={{ from: location }} to={ROUTES.GALLERY}>
+                Gallery
+              </StyledLink>
+            </li>
+          </StyledList>
+        </Stylednav>
+      </div>
 
       {children}
     </Container>
