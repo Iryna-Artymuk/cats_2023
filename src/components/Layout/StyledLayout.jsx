@@ -20,7 +20,7 @@ export const Stylednav = styled.nav`
   outline: 2px solid green;
   span {
     font-size: 44px;
-    color: #1d1d1dпше ;
+    color: #1d1d1d ;
   }
 `;
 export const StyledlogoWrapper = styled.div`

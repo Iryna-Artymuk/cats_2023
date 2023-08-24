@@ -2,7 +2,7 @@ import { ChangeThemeButton } from 'components/Theme/TheamButton';
 import React from 'react';
 
 import logo from '../../images/Logo.png';
-import greeting from '../../images/Hi.png';
+
 import voting from '../../images/vote-table.png';
 import breeds from '../../images/pet-breeds.png';
 import gallery from '../../images/images-search.png';
@@ -31,7 +31,7 @@ const Layout = ({ children, handleThemeChange }) => {
           <img src={logo} alt="logo" />
         </StyledlogoWrapper>
         <Stylednav>
-          <span>HI</span>
+          <span>HI!</span>
 
           <StyledGreeting>Welcome to MacPaw Bootcamp 2023</StyledGreeting>
           <StyledText>Lets start using The Cat API</StyledText>
