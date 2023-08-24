@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/cats_2023/static/js/main.c666a51a.js",
+    "main.js": "/cats_2023/static/js/main.679d0d5f.js",
     "static/media/girl-and-pet 1.png": "/cats_2023/static/media/girl-and-pet 1.1927e13f60069098098c.png",
     "static/media/images-search.png": "/cats_2023/static/media/images-search.69ba4bdb455e5c8cd127.png",
     "static/media/vote-table.png": "/cats_2023/static/media/vote-table.8278dcd9946078ae631e.png",
     "static/media/pet-breeds.png": "/cats_2023/static/media/pet-breeds.f93666435f7dee0dbc91.png",
     "index.html": "/cats_2023/index.html",
-    "main.c666a51a.js.map": "/cats_2023/static/js/main.c666a51a.js.map"
+    "main.679d0d5f.js.map": "/cats_2023/static/js/main.679d0d5f.js.map"
   },
   "entrypoints": [
-    "static/js/main.c666a51a.js"
+    "static/js/main.679d0d5f.js"
   ]
 }
