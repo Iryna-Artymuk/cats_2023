@@ -34,7 +34,7 @@ const Layout = ({ children, handleThemeChange }) => {
             <img src={logo} alt="logo" />
           </StyledlogoWrapper>
           <Stylednav>
-            <span>hi!👋git </span>
+            <span>hi!👋 </span>
 
             <StyledGreeting>Welcome to MacPaw Bootcamp 2023</StyledGreeting>
             <StyledText>Lets start using The Cat API</StyledText>
