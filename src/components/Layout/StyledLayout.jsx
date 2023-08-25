@@ -18,7 +18,7 @@ export const StyledContentWrapper = styled.div`
   }
 `;
 export const StylesWrapper = styled.div`
-  margin: 0 72px 0 117px;
+  margin: 0 72px 0 14git 7px;
   outline: 2px solid red;
   @media screen and (max-width: 768px) {
     margin: 0 32px 0 50px;
@@ -62,8 +62,11 @@ export const StyledList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+
   gap: 16px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   li {
     display: flex;
     flex-direction: column;
