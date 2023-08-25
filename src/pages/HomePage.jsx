@@ -4,9 +4,10 @@ import { StyledContentWrapper, StyledWrapper } from 'pages/StyledHomePage';
 
 const HomePage = () => {
   return (
-    <StyledWrapper homepageimg={homePageImg}>
-      {/* <img src={homePageImg} alt="" /> */}
-      <StyledContentWrapper></StyledContentWrapper>
+    <StyledWrapper>
+      <StyledContentWrapper>
+        <img src={homePageImg} alt="" />
+      </StyledContentWrapper>
     </StyledWrapper>
   );
 };
