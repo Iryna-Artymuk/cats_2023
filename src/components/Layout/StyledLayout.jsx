@@ -8,7 +8,7 @@ export const Container = styled.div`
   /* не задаємо фіксовану ширину щоб контейнер був гумовим  */
   margin: auto;
   padding: 10px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 `;
 export const StyledContentWrapper = styled.div`
   display: flex;
@@ -18,8 +18,8 @@ export const StyledContentWrapper = styled.div`
   }
 `;
 export const StylesWrapper = styled.div`
-  margin: 0 72px 0 14git 7px;
-  outline: 2px solid red;
+  margin: 0 72px 0 147px;
+  /* outline: 2px solid red; */
   @media screen and (max-width: 768px) {
     margin: 0 32px 0 50px;
   }
@@ -35,6 +35,10 @@ export const Stylednav = styled.nav`
     line-height: 1.3;
     color: #1d1d1d;
     text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 `;
 export const StyledlogoWrapper = styled.div`
@@ -42,20 +46,29 @@ export const StyledlogoWrapper = styled.div`
   margin-top: 36px;
   margin-bottom: 80px;
   @media screen and (max-width: 768px) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 `;
 export const StyledGreeting = styled.p`
   margin-bottom: 60px;
   margin-top: 10px;
   font-size: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
 `;
 export const StyledText = styled.p`
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
   color: #1d1d1d;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const StyledList = styled.ul`

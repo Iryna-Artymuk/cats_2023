@@ -1,16 +1,6 @@
 import { styled } from 'styled-components';
 
-// export const StyledWrapper = styled.div`
-//   position: relative;
-//   width: 775px;
-//   height: 900px;
-//   padding: 30px 30px 30px 65px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   outline: 2px solid blue;
-//   background-image: url("`${homePageImg}`");
-// `;
+
 
 export const StyledWrapper = styled.div`
   /* background-image: ${props => {
@@ -27,7 +17,7 @@ export const StyledWrapper = styled.div`
 
   height: 900px;
 
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 
   @media screen and (max-width: 768px) {
     height: auto;
@@ -38,7 +28,7 @@ export const StyledContentWrapper = styled.div`
   height: 93.33%;
   background-color: ${({ theme }) => theme.colors.accentColor2};
   border-radius: 5px;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   img {
     position: absolute;
 
