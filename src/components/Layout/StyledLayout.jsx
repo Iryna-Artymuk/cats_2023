@@ -13,12 +13,15 @@ export const Container = styled.div`
 export const StyledContentWrapper = styled.div`
   display: flex;
   gap: 137px;
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 export const Stylednav = styled.nav`
-  width: 446px;
-  height: 450px;
+  max-width: 446px;
+  min-height: 450px;
 
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   span {
     font-size: 44px;
     color: #1d1d1d;
@@ -29,6 +32,10 @@ export const StyledlogoWrapper = styled.div`
   height: 18px;
   margin-top: 36px;
   margin-bottom: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 `;
 export const StyledGreeting = styled.p`
   margin-bottom: 60px;
@@ -44,6 +51,8 @@ export const StyledText = styled.p`
 export const StyledList = styled.ul`
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 16px;
   li {
     display: flex;
@@ -54,7 +63,7 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledCard = styled.div`
-  width: 138px;
+  max-width: 138px;
   height: 198px;
   display: flex;
   align-items: center;
@@ -71,7 +80,8 @@ export const StyledGalleryCard = styled(StyledCard)`
   background-color: ${({ theme }) => theme.colors.colorYellow};
 `;
 export const StyledLink = styled(NavLink)`
-  width: 138px;
+  min-width: 100px;
+  max-width: 138px;
   height: 16px;
   display: block;
   padding: 10px 0 10px 0;

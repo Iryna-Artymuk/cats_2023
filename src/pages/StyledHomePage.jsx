@@ -24,17 +24,21 @@ export const StyledWrapper = styled.div`
   justify-content: center;
   position: relative;
   width: 775px;
+  min-height: 100%;
   height: 900px;
   padding: 30px 30px 30px 65px;
+  @media screen and (max-width: 768px) {
+    padding: 10px 10px 10px 25px;
+  }
 
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 `;
 export const StyledContentWrapper = styled.div`
-  width: 680px;
-  height: 840px;
+  width: 82.5%;
+  height: 93.3%;
   background-color: ${({ theme }) => theme.colors.accentColor2};
   border-radius: 5px;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   img {
     position: absolute;
 
