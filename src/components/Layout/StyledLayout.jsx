@@ -9,10 +9,11 @@ export const Container = styled.div`
   margin: auto;
   padding: 10px;
   outline: 2px solid red;
-  display: flex;
-  justify-content: space-between;
 `;
-
+export const StyledContentWrapper = styled.div`
+  display: flex;
+  gap: 137px;
+`;
 export const Stylednav = styled.nav`
   width: 446px;
   height: 450px;
