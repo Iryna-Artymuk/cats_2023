@@ -18,6 +18,7 @@ import {
   StyledVotingCard,
   StyledlogoWrapper,
   Stylednav,
+  StylesWrapper,
 } from './StyledLayout';
 import { useLocation } from 'react-router-dom';
 import { ROUTES } from 'utils/routes';
@@ -28,12 +29,12 @@ const Layout = ({ children, handleThemeChange }) => {
     <Container>
       <ChangeThemeButton handleThemeChange={handleThemeChange} />
       <StyledContentWrapper>
-        <div>
+        <StylesWrapper>
           <StyledlogoWrapper>
             <img src={logo} alt="logo" />
           </StyledlogoWrapper>
           <Stylednav>
-            <span>HI!</span>
+            <span>hi!👋git </span>
 
             <StyledGreeting>Welcome to MacPaw Bootcamp 2023</StyledGreeting>
             <StyledText>Lets start using The Cat API</StyledText>
@@ -65,7 +66,7 @@ const Layout = ({ children, handleThemeChange }) => {
               </li>
             </StyledList>
           </Stylednav>
-        </div>
+        </StylesWrapper>
 
         {children}
       </StyledContentWrapper>

@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 body{
-  font-family: "Gilroy-ExtraBold", Tahoma, Arial, sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 16px;
-  font-weight:500;
+  font-weight:400;
   background-color: ${({ theme }) => {
     // console.log(' theme: ',  theme);
 
