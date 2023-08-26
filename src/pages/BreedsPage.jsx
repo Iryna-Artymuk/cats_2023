@@ -1,13 +1,15 @@
 import React, { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { StyledWrapper } from './StyledHomePage';
+
+import SearchForm from 'components/Forms/SearchForm';
+import { Box } from './StyledBreedspage';
 
 const BreedsPage = () => {
   const location = useLocation();
   const backLinkHref = useRef(location.state?.from ?? '/');
   return (
-    <>
-    <StyledWrapper>
+    <Box>
+      <SearchForm></SearchForm>
       <div>
         <Link to={backLinkHref.current}>
           <span>
@@ -18,8 +20,7 @@ const BreedsPage = () => {
         </Link>
       </div>
       <div>Breeds</div>
-    </StyledWrapper>
-  </>
+    </Box>
   );
 };
 

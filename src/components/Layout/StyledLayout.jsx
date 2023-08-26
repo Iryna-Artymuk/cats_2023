@@ -2,30 +2,20 @@ import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1420px;
+  max-width: 1460px;
 
   /* width: 1200px; */
   /* не задаємо фіксовану ширину щоб контейнер був гумовим  */
   margin: auto;
   padding: 10px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 `;
 export const StyledContentWrapper = styled.div`
   display: flex;
-
-  gap: 72px;
-
-  @media screen and (max-width: 768px) {
-    gap: 10px;
-  }
 `;
 export const StylesWrapper = styled.div`
-  width: 486px;
-  margin: 0 0 0 67px;
-
-  @media screen and (max-width: 768px) {
-    margin: 0 5px 0 10px;
-  }
+  width: 33.75%;
+  margin: 0 5% 0 9.51%;
 `;
 export const Stylednav = styled.nav`
   width: 100%;
@@ -81,14 +71,15 @@ export const StyledList = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     flex-direction: column;
-  }
+  } */
   li {
     width: 28.39%;
-    @media screen and (max-width: 768px) {
+    min-width: 100px;
+    /* @media screen and (max-width: 768px) {
       width: 100px;
-    }
+    } */
 
     display: flex;
     flex-direction: column;

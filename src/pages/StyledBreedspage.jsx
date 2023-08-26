@@ -1,8 +1,13 @@
 import { styled } from 'styled-components';
 
-export const StyledWrapper = styled.div`
-  width: 640px;
-  height: 748px;
+export const Box = styled.div`
+  width: 47.22%;
+  /* height: 54.3%; */
+  margin-left: 4.51%;
+  @media only screen and (max-width: 600px) {
+    /* body {
 
+} */
+  }
   outline: 2px solid blue;
 `;
