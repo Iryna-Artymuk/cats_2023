@@ -17,7 +17,16 @@ const VotingPage = () => {
             </span>
           </Link>
         </div>
-        <div>Voting</div>
+        <div>
+          Voting{' '}
+          <span>
+            <svg width={24} height={24}>
+              <use
+                xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-smileFace`}
+              />
+            </svg>
+          </span>
+        </div>
       </StyledWrapper>
     </>
   );

@@ -13,19 +13,22 @@ export const Container = styled.div`
 export const StyledContentWrapper = styled.div`
   display: flex;
 
+  gap: 72px;
+
   @media screen and (max-width: 768px) {
     gap: 10px;
   }
 `;
 export const StylesWrapper = styled.div`
-  margin: 0 72px 0 147px;
-  /* outline: 2px solid red; */
+  width: 486px;
+  margin: 0 0 0 67px;
+
   @media screen and (max-width: 768px) {
-    margin: 0 32px 0 50px;
+    margin: 0 5px 0 10px;
   }
 `;
 export const Stylednav = styled.nav`
-  max-width: 450px;
+  width: 100%;
   min-height: 450px;
 
   /* outline: 2px solid green; */
@@ -72,15 +75,21 @@ export const StyledText = styled.p`
 `;
 
 export const StyledList = styled.ul`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-wrap: wrap;
   gap: 16px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
   li {
+    width: 28.39%;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+    }
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -89,7 +98,7 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledCard = styled.div`
-  width: 138px;
+  width: 100%;
   height: 198px;
   display: flex;
   align-items: center;
@@ -106,7 +115,11 @@ export const StyledGalleryCard = styled(StyledCard)`
   background-color: ${({ theme }) => theme.colors.colorYellow};
 `;
 export const StyledLink = styled(NavLink)`
-  width: 138px;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100px;
+  }
+
   height: 36px;
   display: flex;
   align-items: center;

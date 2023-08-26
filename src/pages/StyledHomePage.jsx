@@ -1,7 +1,5 @@
 import { styled } from 'styled-components';
 
-
-
 export const StyledWrapper = styled.div`
   /* background-image: ${props => {
     console.log('props.img ', props.homepageimg);
@@ -28,7 +26,12 @@ export const StyledContentWrapper = styled.div`
   height: 93.33%;
   background-color: ${({ theme }) => theme.colors.accentColor2};
   border-radius: 5px;
+  margin: 30px 30px 30px 65px;
   /* outline: 2px solid green; */
+  @media screen and (max-width: 768px) {
+    height: 53.33%;
+    margin: 10px 10px 10px 45px;
+  }
   img {
     position: absolute;
 
