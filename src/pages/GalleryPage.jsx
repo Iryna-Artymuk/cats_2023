@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { StyledWrapper } from './StyledHomePage';
+
 import SearchForm from 'components/Forms/SearchForm';
 import { Box } from './StyledBreedspage';
 
