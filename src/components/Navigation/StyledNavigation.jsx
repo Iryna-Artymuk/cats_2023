@@ -115,8 +115,13 @@ export const BurgerButton = styled.button`
   align-items: center;
   background: ${props => props.theme.colors.colorWhite};
   border-radius: 20px;
+  margin: 20px 0 0 20px;
   @media screen and (min-width: 1440px) {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
   svg {
     fill: ${({ theme }) => theme.colors.colorWhite};
@@ -129,6 +134,11 @@ export const BurgerButton = styled.button`
 export const LinkWrapper = styled.div`
   display: flex;
   gap: 10px;
+
+  margin: 20px 20px 0px 0px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 `;
 export const PageLink = styled(Link)`
   display: flex;
@@ -180,5 +190,5 @@ export const StyledNav = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* margin: 20px; */
+  margin-bottom: 10px;
 `;
