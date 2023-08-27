@@ -1,13 +1,11 @@
 import { styled } from 'styled-components';
 
 export const Box = styled.div`
-  width: 47.22%;
-  /* height: 54.3%; */
-  margin-left: 4.51%;
-  @media only screen and (max-width: 600px) {
-    /* body {
+  width: 100%;
 
-} */
-  }
   outline: 2px solid blue;
+  @media screen and (min-width: 1440px) {
+    margin-left: 4.51%;
+    width: 47.22%;
+  }
 `;

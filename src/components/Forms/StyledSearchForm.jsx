@@ -4,16 +4,19 @@ import { styled } from 'styled-components';
 export const SerchFormWrapper = styled.div`
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+
   /* outline: 2px solid green; */
 `;
 export const StyledForm = styled.form`
-  width: 66.17%;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
   border-radius: 20px;
   background: ${({ theme }) => theme.colors.colorWhite};
+  @media screen and (min-width: 767px) {
+    width: 428px;
+  }
   input {
     width: 100%;
     height: 100%;

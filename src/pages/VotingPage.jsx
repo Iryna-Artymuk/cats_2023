@@ -1,17 +1,30 @@
 import React, { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { Box, ButtonsWrapper } from './StyledVotingPage';
-import SearchForm from 'components/Forms/SearchForm';
+import {
+  Box,
+  ButtonsWrapper,
+  StyledNavigationWrapper,
+} from './StyledVotingPage';
+
 import Button from 'components/Button/Button';
+import Navigation from 'components/Navigation/Navigation';
+import TabletNavigation from 'components/Navigation/Tabletavigation';
+import MobileNavigation from 'components/Navigation/MobileNavigation';
 
 const VotingPage = () => {
   const location = useLocation();
   const backLinkHref = useRef(location.state?.from ?? '/');
   return (
-    <Box>
-      <SearchForm></SearchForm>
-      <div>
+    <>
+      <StyledNavigationWrapper>
+        <Navigation />
+      </StyledNavigationWrapper>
+
+      <Box>
+        <TabletNavigation />
+        <MobileNavigation />
+
         <Link to={backLinkHref.current}>
           <span>
             <svg width={24} height={24}>
@@ -21,11 +34,9 @@ const VotingPage = () => {
             </svg>
           </span>
         </Link>
-        <div>voting</div>
-        <div></div>
+
         <ButtonsWrapper>
           <Button type="button" tag="smile">
-            {' '}
             <svg>
               <use
                 xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-smileFace`}
@@ -33,7 +44,6 @@ const VotingPage = () => {
             </svg>
           </Button>
           <Button type="button" tag="heart">
-            {' '}
             <svg>
               <use
                 xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-Heart`}
@@ -48,8 +58,8 @@ const VotingPage = () => {
             </svg>
           </Button>
         </ButtonsWrapper>
-      </div>
-    </Box>
+      </Box>
+    </>
   );
 };
 
