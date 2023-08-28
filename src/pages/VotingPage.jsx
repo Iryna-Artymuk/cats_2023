@@ -1,10 +1,13 @@
 import React, { useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import {
   Box,
   ButtonsWrapper,
+  StyledContentWrapper,
+  StyledLinkBack,
   StyledNavigationWrapper,
+  StyledPageName,
 } from './StyledVotingPage';
 
 import Button from 'components/Button/Button';
@@ -25,16 +28,21 @@ const VotingPage = () => {
         <TabletNavigation />
         <MobileNavigation />
 
-        <Link to={backLinkHref.current}>
-          <span>
-            <svg width={24} height={24}>
-              <use
-                xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-arrow-back`}
-              />
-            </svg>
-          </span>
-        </Link>
+        <StyledContentWrapper>
+          <div>
+            <StyledLinkBack to={backLinkHref.current}>
+              <span>
+                <svg width={24} height={24}>
+                  <use
+                    xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-arrow-back`}
+                  />
+                </svg>
+              </span>
+            </StyledLinkBack>
 
+            <StyledPageName>Voting</StyledPageName>
+          </div>
+        </StyledContentWrapper>
         <ButtonsWrapper>
           <Button type="button" tag="smile">
             <svg>
