@@ -2,7 +2,7 @@ export const light = {
   name: 'light-theme',
   colors: {
     body_background: '#E5E5E5',
-    background: 'F8F8F7',
+    background: '#F8F8F7',
     content_background: '#fff',
     accentColor1: '#FF868E',
     accentColor2: '#FBE0DC',

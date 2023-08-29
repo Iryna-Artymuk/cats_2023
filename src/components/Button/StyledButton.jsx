@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 
 export const StyledButton = styled.button`
-  width: 80px;
-  height:80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,8 +10,11 @@ export const StyledButton = styled.button`
     if (props.tag === 'smile') return props.theme.colors.colorGreen;
     if (props.tag === 'heart') return props.theme.colors.accentColor1;
     if (props.tag === 'sad') return props.theme.colors.colorYellow;
-
   }};
+  @media screen and (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 
   svg {
     fill: ${({ theme }) => theme.colors.colorWhite};

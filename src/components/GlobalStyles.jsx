@@ -92,12 +92,12 @@ img {
 color: ${({ theme }) => theme.colors.errorTextColor}
 }
 
-span{
+
   svg{
     fill: ${({ theme }) => theme.colors.accentColor1};  
   }
 svg:hover{
   fill: ${({ theme }) => theme.colors.colorWhite}
 }
-}
+
 `;
