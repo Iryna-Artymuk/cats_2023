@@ -4,6 +4,16 @@ import { styled } from 'styled-components';
 import defaultImg from '../images/default.jpg';
 export const Box = styled.div`
   width: 100%;
+  @media screen and (min-width: 375px) {
+    width: 335px;
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 708px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1420px;
+  }
 
   outline: 2px solid blue;
   @media screen and (min-width: 1440px) {
@@ -13,11 +23,11 @@ export const Box = styled.div`
 `;
 
 export const StyledContentWrapper = styled.div`
-  width: 335px;
+  width: 100%;
 
   padding: 20px;
   border-radius: 20px;
-
+  margin-top: 10px;
   background: ${({ theme }) => theme.colors.content_background};
   outline: 2px solid tomato;
 `;
@@ -64,33 +74,48 @@ export const StyledBackLinkWrapper = styled.div`
   justify-content: flex-start;
   gap: 10px;
   margin-bottom: 20px;
-  outline: 2px solid yellowgreen;
+  /* outline: 2px solid yellowgreen; */
 `;
 
-export const StyledImg = styled.div.attrs(props => ({
-  style: {
-    backgroundImage: `url(${props?.catImg || defaultImg})`,
-    backgroundSize: 'cover',
-  },
-}))`
+export const StyledImg = styled.div`
   position: relative;
-  width: 295px;
-  height: 166px;
+  width: 100%;
+
+  @media screen and (min-width: 375px) {
+    width: 295px;
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 668px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1420px;
+  }
+
   border-radius: 20px;
   margin-bottom: 43px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`
   position: absolute;
   bottom: -30px;
   left: 55px;
-  right: 54px;
 
   border-radius: 20px;
   display: flex;
 
   overflow: hidden;
   gap: 4px;
+  margin-bottom: 14px;
+  @media screen and (min-width: 767px) {
+    left: 196px;
+    bottom: -40px;
+  }
 `;
 
 export const StyledActivityList = styled.ul`
@@ -100,14 +125,22 @@ export const StyledActivityList = styled.ul`
     width: 100%;
     div {
       position: relative;
+
       width: 100%;
-      height: 118px;
-      /* display: flex;
-      flex-direction: column; */
-      /* gap: 10px; */
+
       padding: 18px 15px 15px 15px;
-      border-radius: 20px;
+      border-radius: 10px;
       background: ${({ theme }) => theme.colors.background};
+
+      @media screen and (min-width: 767px) {
+        display: flex;
+        gap: 13px;
+      }
+      svg {
+        position: absolute;
+        top: 21px;
+        right: 21px;
+      }
     }
   }
 `;
@@ -120,9 +153,12 @@ export const StyledTime = styled.span`
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  margin-bottom: 13px;
-  margin-right: 179px;
+
   border-radius: 5px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const StyledLogInfo = styled.p`

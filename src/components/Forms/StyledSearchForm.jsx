@@ -9,6 +9,16 @@ export const SerchFormWrapper = styled.div`
 `;
 export const StyledForm = styled.form`
   width: 100%;
+  @media screen and (min-width: 375px) {
+    width: 335px;
+  }
+
+  @media screen and (min-width: 767px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1420px;
+  }
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -31,6 +41,10 @@ export const StyledForm = styled.form`
   button {
     width: 40px;
     height: 40px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
     border-radius: 10px;
     margin-right: 10px;
     margin-top: 10px;

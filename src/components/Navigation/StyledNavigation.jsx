@@ -107,39 +107,6 @@ export const StyledLink = styled(NavLink)`
   }
 `;
 
-export const BurgerButton = styled.button`
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: ${props => props.theme.colors.colorWhite};
-  border-radius: 20px;
-  margin: 20px 0 0 20px;
-  @media screen and (min-width: 1440px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin: 0;
-  }
-  svg {
-    fill: ${({ theme }) => theme.colors.colorWhite};
-    display: block;
-    width: 30px;
-    height: 30px;
-    stroke-width: 0;
-  }
-`;
-export const LinkWrapper = styled.div`
-  display: flex;
-  gap: 10px;
-
-  margin: 20px 20px 0px 0px;
-  @media screen and (min-width: 768px) {
-    margin: 0;
-  }
-`;
 export const PageLink = styled(Link)`
   display: flex;
   align-items: center;
@@ -164,6 +131,37 @@ export const PageLink = styled(Link)`
   }
 `;
 
+// --- mobile and tablet
+export const BurgerButton = styled.button`
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${props => props.theme.colors.colorWhite};
+  border-radius: 20px;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+
+  svg {
+    fill: ${({ theme }) => theme.colors.colorWhite};
+    display: block;
+    width: 30px;
+    height: 30px;
+    stroke-width: 0;
+  }
+`;
+export const LinkWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+`;
+
 export const StyledNavWrapperTablet = styled.div`
   display: none;
   @media screen and (min-width: 767px) {
@@ -179,7 +177,7 @@ export const StyledNavWrapperTablet = styled.div`
 `;
 export const StyledNavWrapperMobile = styled.div`
   display: block;
-  width: 100%;
+  width: 335px;
 
   @media screen and (min-width: 767px) {
     display: none;

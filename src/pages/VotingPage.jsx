@@ -48,8 +48,8 @@ const VotingPage = () => {
 
             <StyledPageName>Voting</StyledPageName>
           </StyledBackLinkWrapper>
-          <StyledImg catImg={catImg}>
-            {/* картинка тимчасово вона буде пердаватись динамічно після запиту на бекенд */}
+          <StyledImg>
+            <img src={catImg} alt="" />
             <ButtonsWrapper>
               <Button type="button" tag="smile">
                 <svg>
