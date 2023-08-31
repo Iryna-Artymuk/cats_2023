@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
-import defaultImg from '../images/default.jpg';
+
 export const Box = styled.div`
   width: 100%;
   @media screen and (min-width: 375px) {

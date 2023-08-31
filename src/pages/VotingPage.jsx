@@ -16,6 +16,8 @@ import {
 } from './StyledVotingPage';
 
 import catImg from '../images/cat.png';
+import defaultImg from '../images/default.jpg';
+
 import Button from 'components/Button/Button';
 import Navigation from 'components/Navigation/Navigation';
 import TabletNavigation from 'components/Navigation/Tabletavigation';
@@ -49,7 +51,7 @@ const VotingPage = () => {
             <StyledPageName>Voting</StyledPageName>
           </StyledBackLinkWrapper>
           <StyledImg>
-            <img src={catImg} alt="" />
+            <img src={catImg || defaultImg} alt="" />
             <ButtonsWrapper>
               <Button type="button" tag="smile">
                 <svg>
