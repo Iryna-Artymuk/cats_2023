@@ -3,6 +3,8 @@ export const light = {
   colors: {
     body_background: '#E5E5E5',
     background: '#F8F8F7',
+    backgroundWhite: '#fff',
+
     content_background: '#fff',
     accentColor1: '#FF868E',
     accentColor2: '#FBE0DC',
@@ -12,6 +14,7 @@ export const light = {
     colorWhite: '#FFF',
     textColor: '#8C8C8C',
     textWhite: '#fff',
+    textDark: '#1D1D1D',
     hoverTextColor: '#fff',
     errorTextColor: '#C73E1D',
     buttonDefaultBGColor: '#fff',

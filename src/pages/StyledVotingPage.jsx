@@ -14,7 +14,7 @@ export const Box = styled.div`
 
 export const StyledContentWrapper = styled.div`
   width: 335px;
-  margin: 10px 20px 20px 20px;
+
   padding: 20px;
   border-radius: 20px;
 
@@ -69,7 +69,7 @@ export const StyledBackLinkWrapper = styled.div`
 
 export const StyledImg = styled.div.attrs(props => ({
   style: {
-    backgroundImage: `url(${props.catImg || defaultImg})`,
+    backgroundImage: `url(${props?.catImg || defaultImg})`,
     backgroundSize: 'cover',
   },
 }))`
@@ -99,14 +99,41 @@ export const StyledActivityList = styled.ul`
   li {
     width: 100%;
     div {
+      position: relative;
       width: 100%;
       height: 118px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      /* display: flex;
+      flex-direction: column; */
+      /* gap: 10px; */
       padding: 18px 15px 15px 15px;
       border-radius: 20px;
       background: ${({ theme }) => theme.colors.background};
     }
+  }
+`;
+
+export const StyledTime = styled.span`
+  display: inline-block;
+  padding: 3px 10px 3px 10px;
+  background: ${({ theme }) => theme.colors.backgroundWhite};
+  color: ${({ theme }) => theme.colors.textDark};
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 13px;
+  margin-right: 179px;
+  border-radius: 5px;
+`;
+
+export const StyledLogInfo = styled.p`
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  p {
+    color: ${({ theme }) => theme.colors.textColor};
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.textDark};
   }
 `;

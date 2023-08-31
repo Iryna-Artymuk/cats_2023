@@ -9,8 +9,10 @@ import {
   StyledContentWrapper,
   StyledImg,
   StyledLinkBack,
+  StyledLogInfo,
   StyledNavigationWrapper,
   StyledPageName,
+  StyledTime,
 } from './StyledVotingPage';
 
 import catImg from '../images/cat.png';
@@ -76,14 +78,17 @@ const VotingPage = () => {
           <StyledActivityList>
             <li>
               <div>
-                <span>22:35</span>
-                <span>
-                  <svg width={24} height={24}>
-                    <use
-                      xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-Heart`}
-                    />
-                  </svg>
-                </span>
+                <StyledTime>22:35</StyledTime>
+
+                <svg width={24} height={24}>
+                  <use
+                    xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-Heart`}
+                  />
+                </svg>
+
+                <StyledLogInfo>
+                  Image ID: <span> fQSunHvl8</span> was added to Likes
+                </StyledLogInfo>
               </div>
             </li>
           </StyledActivityList>
