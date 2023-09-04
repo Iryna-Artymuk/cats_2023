@@ -27,6 +27,9 @@ export const StyledForm = styled.form`
   @media screen and (min-width: 767px) {
     width: 428px;
   }
+  @media screen and (min-width: 1439px) {
+    width: 470px;
+  }
   input {
     width: 100%;
     height: 100%;
@@ -42,9 +45,9 @@ export const StyledForm = styled.form`
     width: 40px;
     height: 40px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     margin-right: 10px;
     margin-top: 10px;

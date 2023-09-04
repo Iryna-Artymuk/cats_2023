@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
-
 export const Box = styled.div`
   width: 100%;
   @media screen and (min-width: 375px) {
@@ -12,13 +11,8 @@ export const Box = styled.div`
     width: 708px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1420px;
-  }
-
-  outline: 2px solid blue;
-  @media screen and (min-width: 1440px) {
-    margin-left: 4.51%;
-    width: 47.22%;
+    width: 680px;
+    margin-left: 65px;
   }
 `;
 
@@ -29,7 +23,7 @@ export const StyledContentWrapper = styled.div`
   border-radius: 20px;
   margin-top: 10px;
   background: ${({ theme }) => theme.colors.content_background};
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 `;
 export const StyledLinkBack = styled(Link)`
   display: flex;
@@ -89,7 +83,7 @@ export const StyledImg = styled.div`
     width: 668px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1420px;
+    width: 640px;
   }
 
   border-radius: 20px;

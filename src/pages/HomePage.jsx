@@ -9,9 +9,6 @@ const HomePage = () => {
 
   return (
     <>
-      
-
-
    <Navigation/>
       <StyledWrapper>
         <StyledContentWrapper>

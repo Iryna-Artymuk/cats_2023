@@ -17,6 +17,9 @@ export const Container = styled.div`
     width: 768px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1420px;
+    width: 1440px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
   }
 `;

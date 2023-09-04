@@ -5,11 +5,12 @@ export const StyledContentWrapper = styled.div`
   @media screen and (min-width: 1440px) {
     display: block;
   }
-  width: 87.74%;
-  height: 93.33%;
+  width: 680px;
+  height: 900px;
   background-color: ${({ theme }) => theme.colors.accentColor2};
   border-radius: 5px;
   margin: 30px 30px 30px 65px;
+
   /* outline: 2px solid green; */
 
   img {
@@ -28,8 +29,8 @@ export const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 53.81%;
+    width: 775px;
   }
 
-  outline: 2px solid blue;
+  /* outline: 2px solid orange; */
 `;

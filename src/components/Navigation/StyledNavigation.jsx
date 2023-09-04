@@ -4,23 +4,20 @@ import { styled } from 'styled-components';
 export const StylesWrapper = styled.div`
   width: 100%;
 
-  outline: 2px solid purple;
-
   @media screen and (min-width: 768px) and (max-width: 1439px) {
-    padding: 0 175px 440px 147px;
+    padding: 36px 175px 440px 147px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 446px;
-    margin: 0 72px 147px;
+    margin: 0px 72px 0px 147px;
   }
+
+  /* outline: 2px solid purple; */
 `;
 
 export const StyledlogoWrapper = styled.div`
-  @media screen and (min-width: 768px) {
-    margin-top: 36px;
-    margin-bottom: 86px;
-  }
+  margin-bottom: 86px;
 `;
 export const Stylednav = styled.nav`
   width: 100%;

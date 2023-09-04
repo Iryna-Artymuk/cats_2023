@@ -28,7 +28,7 @@ const Navigation = () => {
       <Stylednav>
         <span>hi!👋 </span>
 
-        <StyledGreeting>Welcome to MacPaw Bootcamp 2023</StyledGreeting>
+        <StyledGreeting>Welcome to MacPaw Bootcamp2023</StyledGreeting>
 
         <StyledText>Lets start using The Cat API</StyledText>
 
