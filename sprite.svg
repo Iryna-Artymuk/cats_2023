@@ -19,4 +19,7 @@
 <symbol id="burger_icon" viewBox="0 0 53 32" xmlns="http://www.w3.org/2000/svg">
 <path fill="#ff868e" style="fill: var(--color1, #ff868e)" d="M53.333 3.556h-53.333v-3.556h53.333v3.556zM53.333 17.778h-53.333v-3.556h53.333v3.556zM53.333 32h-53.333v-3.556h53.333v3.556z"></path>
 </symbol>
+<symbol id="close_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> 
+<path fill="#ff868e" style="fill: var(--color1, #ff868e)" d="M14.26 15.999l-13.899-13.899 1.741-1.741 13.899 13.899 13.899-13.899 1.741 1.741-13.899 13.899 13.899 13.899-1.741 1.741-13.899-13.899-13.899 13.899-1.741-1.741 13.899-13.899z"></path>
+</symbol>
 </svg>
