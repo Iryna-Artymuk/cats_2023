@@ -28,3 +28,12 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.colors.hoverTextColor};
   } */
 `;
+
+export const CloseButton = styled(StyledButton)`
+  width: 60px;
+  height: 60px;
+
+  background: ${({ theme }) => theme.colors.colorWhite};
+  border-radius: 20px;
+  margin: 10px 10px 20px auto;
+`;

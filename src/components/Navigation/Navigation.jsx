@@ -1,4 +1,4 @@
-import React from 'react';
+
 import logo from '../../images/Logo.png';
 
 import voting from '../../images/vote-table.png';
@@ -8,18 +8,21 @@ import { useLocation } from 'react-router';
 import { ROUTES } from 'utils/routes';
 import {
   StyledBreedsCard,
+
   StyledGalleryCard,
   StyledGreeting,
   StyledLink,
-  StyledList,
+  StyledNavList,
   StyledText,
   StyledVotingCard,
   StyledlogoWrapper,
   Stylednav,
   StylesWrapper,
 } from './StyledNavigation';
+
 const Navigation = () => {
   const location = useLocation();
+
   return (
     <StylesWrapper>
       <StyledlogoWrapper>
@@ -32,7 +35,7 @@ const Navigation = () => {
 
         <StyledText>Lets start using The Cat API</StyledText>
 
-        <StyledList>
+        <StyledNavList>
           <li>
             <StyledVotingCard>
               <img src={voting} alt="" />
@@ -57,8 +60,9 @@ const Navigation = () => {
               Gallery
             </StyledLink>
           </li>
-        </StyledList>
+        </StyledNavList>
       </Stylednav>
+      
     </StylesWrapper>
   );
 };

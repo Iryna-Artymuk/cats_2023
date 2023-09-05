@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 
 export const StylesWrapper = styled.div`
   width: 100%;
-
+  position: relative;
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     padding: 36px 175px 440px 147px;
   }
@@ -43,13 +43,14 @@ export const StyledText = styled.p`
   color: #1d1d1d;
 `;
 
-export const StyledList = styled.ul`
+export const StyledNavList = styled.ul`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   padding-bottom: 334px;
+
   @media screen and (min-width: 769px) {
     flex-direction: row;
   }
@@ -66,6 +67,7 @@ export const StyledCard = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  margin-bottom: 10px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -148,6 +150,30 @@ export const BurgerButton = styled.button`
     width: 30px;
     height: 30px;
     stroke-width: 0;
+  }
+`;
+
+export const StyledBurgerMenu = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: ${({ theme }) => {
+    // console.log(' theme: ',  theme);
+    return theme.colors.body_background;
+  }};
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+  ul {
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
   }
 `;
 export const LinkWrapper = styled.div`

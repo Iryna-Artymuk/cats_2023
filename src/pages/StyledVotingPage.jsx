@@ -3,6 +3,7 @@ import { styled } from 'styled-components';
 
 export const Box = styled.div`
   width: 100%;
+  position: relative;
   @media screen and (min-width: 375px) {
     width: 335px;
   }
