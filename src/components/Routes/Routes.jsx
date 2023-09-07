@@ -5,7 +5,7 @@ import { ROUTES } from '../../utils/routes';
 
 import HomePage from 'pages/HomePage';
 import GalleryPage from 'pages/GalleryPage';
-import BreedsPage from 'pages/BreedsPage';
+import BreedsPage from 'pages/BreedsPage/BreedsPage';
 import VotingPage from 'pages/VotingPage';
 
 const AppRoutes = () => (
