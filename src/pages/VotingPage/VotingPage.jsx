@@ -6,12 +6,12 @@ import {
   StyledTime,
 } from './StyledVotingPage';
 
-import catImg from '../images/cat.png';
-import defaultImg from '../images/default.jpg';
+import catImg from '../../images/cat.png';
+import defaultImg from '../../images/default.jpg';
 
 import Button from 'components/Button/Button';
 
-import PageLayout from './PageLayout/PageLayout';
+import PageLayout from '../PageLayout/PageLayout';
 
 const VotingPage = () => {
   return (

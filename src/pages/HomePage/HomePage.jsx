@@ -1,10 +1,8 @@
 import React from 'react';
-import homePageImg from '../images/girl-and-pet 1.png';
-import { StyledContentWrapper, StyledWrapper } from 'pages/StyledHomePage';
-
-
-
+import homePageImg from '../../images/girl-and-pet 1.png';
 import Navigation from 'components/Navigation/Navigation';
+import { StyledContentWrapper, StyledWrapper } from './StyledHomePage';
+
 const HomePage = () => {
 
   return (

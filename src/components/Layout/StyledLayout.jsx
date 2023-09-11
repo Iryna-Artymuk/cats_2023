@@ -2,6 +2,7 @@ import { styled } from 'styled-components';
 
 export const Container = styled.div`
   outline: 2px solid red;
+  
   margin: 0 auto;
   padding: 10px;
   display: flex;

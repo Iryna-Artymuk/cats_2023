@@ -10,4 +10,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-// basename="/bootcamp_2023_test"
+

@@ -3,10 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 
 import { ROUTES } from '../../utils/routes';
 
-import HomePage from 'pages/HomePage';
-import GalleryPage from 'pages/GalleryPage';
+import HomePage from 'pages/HomePage/HomePage';
+import GalleryPage from 'pages/GalleryPage/GalleryPage';
 import BreedsPage from 'pages/BreedsPage/BreedsPage';
-import VotingPage from 'pages/VotingPage';
+import VotingPage from 'pages/VotingPage/VotingPage';
 
 const AppRoutes = () => (
   <Routes>

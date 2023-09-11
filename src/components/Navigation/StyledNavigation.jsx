@@ -166,6 +166,7 @@ export const StyledBurgerMenu = styled.div`
     // console.log(' theme: ',  theme);
     return theme.colors.body_background;
   }};
+  /* outline: 2px solid purple; */
 
   @media screen and (min-width: 1440px) {
     display: none;
