@@ -2,7 +2,8 @@ import PageLayout from 'pages/PageLayout/PageLayout';
 
 import SelectBreeds from 'components/SelectButton/BreedsSelectButton';
 import SelectLimit from 'components/SelectButton/LimitSelectButton';
-import { StyledSelectWrapper } from './StyledBreedspage';
+import { StyledLimitWrapper, StyledSelectWrapper } from './StyledBreedspage';
+import { SortButton } from 'components/Button/StyledButton';
 
 const BreedsPage = () => {
   return (
@@ -10,24 +11,23 @@ const BreedsPage = () => {
       <StyledSelectWrapper>
         <SelectBreeds />
 
-        <div>
-        <SelectLimit />
-        <button>
-        <svg width={12} height={12}>
-          <use
-            xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-drop_down`}
-          />
-        </svg>
-        </button>
-        <button>
-        <svg width={12} height={12}>
-          <use
-            xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-drop_down`}
-          />
-        </svg>
-        </button>
-        </div>
-     
+        <StyledLimitWrapper>
+          <SelectLimit />
+          <SortButton>
+            <svg>
+              <use
+                xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon_sortAtoB`}
+              />
+            </svg>
+          </SortButton>
+          <SortButton>
+            <svg>
+              <use
+                xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon_sortBtoA`}
+              />
+            </svg>
+          </SortButton>
+        </StyledLimitWrapper>
       </StyledSelectWrapper>
     </PageLayout>
   );

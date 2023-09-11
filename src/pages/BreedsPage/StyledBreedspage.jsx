@@ -9,3 +9,8 @@ export const StyledSelectWrapper = styled.div`
     flex-direction: row;
   }
 `;
+export const StyledLimitWrapper = styled.div`
+  display: flex;
+
+  gap: 10px;
+`;

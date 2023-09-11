@@ -29,12 +29,19 @@ export const StyledNavigationWrapper = styled.div`
 
 export const StyledContentWrapper = styled.div`
   width: 100%;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
   padding: 20px;
   border-radius: 20px;
   margin-top: 10px;
   background: ${({ theme }) => theme.colors.content_background};
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledBackLinkWrapper = styled.div`

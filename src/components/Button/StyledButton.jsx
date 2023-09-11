@@ -37,3 +37,14 @@ export const CloseButton = styled(StyledButton)`
   border-radius: 20px;
   margin: 10px 10px 20px auto;
 `;
+export const SortButton = styled(StyledButton)`
+  width: 40px;
+  height: 40px;
+
+  background: ${({ theme }) => theme.colors.background};
+  border-radius: 10px;
+  svg {
+    width: 18px;
+    height: 21px;
+  }
+`;
