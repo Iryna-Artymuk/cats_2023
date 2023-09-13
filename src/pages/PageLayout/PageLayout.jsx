@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router';
-import { useRef, useState } from 'react';
+import {  useState } from 'react';
 
 import { ROUTES } from 'utils/routes';
 
@@ -12,9 +12,7 @@ import {
   Box,
   StyledContentWrapper,
   StyledNavigationWrapper,
-  StyledBackLinkWrapper,
-  StyledLinkBack,
-  StyledPageName,
+
 } from './StyledPageLayout';
 import { StyledBreedsCard, StyledBurgerMenu, StyledGalleryCard, StyledLink, StyledNavList, StyledVotingCard } from 'components/Navigation/StyledNavigation';
 
@@ -25,7 +23,7 @@ import gallery from '../../images/images-search.png';
 
 const PageLayout = ({ children, pageName }) => {
   const location = useLocation();
-  const backLinkHref = useRef(location.state?.from ?? '/');
+ 
   const [showBurgerMenu, SetShowMenu] = useState(false);
 
 
@@ -77,19 +75,7 @@ const PageLayout = ({ children, pageName }) => {
           </StyledBurgerMenu>
         )}
         <StyledContentWrapper>
-          <StyledBackLinkWrapper>
-            <StyledLinkBack to={backLinkHref.current}>
-              <span>
-                <svg width={24} height={24}>
-                  <use
-                    xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-arrow-back`}
-                  />
-                </svg>
-              </span>
-            </StyledLinkBack>
-
-            <StyledPageName>{pageName}</StyledPageName>
-          </StyledBackLinkWrapper>
+        
           {children}
         </StyledContentWrapper>
       </Box>
