@@ -14,3 +14,9 @@ export const StyledLimitWrapper = styled.div`
 
   gap: 10px;
 `;
+export const StyledBreedsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+`;
