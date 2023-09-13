@@ -1,5 +1,5 @@
 import { ROUTES } from 'utils/routes';
-import { Outlet, useLocation } from 'react-router';
+import { useLocation } from 'react-router';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
