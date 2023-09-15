@@ -30,16 +30,6 @@ export const StyledBreedsDetailCart = styled.div`
   gap: 50px;
   outline: 2px solid blue;
 `;
-export const StyledImgWraper = styled.div`
-  position: relative;
-  border-radius: 20px;
-
-  width: 295px;
-  height: 166px;
-
-  border-radius: 20px;
-  overflow: hidden;
-`;
 export const StyledPagitationWrapper = styled.div`
   height: 30px;
   position: absolute;
@@ -62,5 +52,58 @@ export const StyledPagitationWrapper = styled.div`
     background: ${({ theme }) => theme.colors.accentColor1};
   }
 `;
-export const StyledBreedName = styled.span``;
-export const StyledBreedInfoWrapper = styled.div``;
+export const StyledBreedInfoWrapper = styled.div`
+  position: relative;
+  width: 295px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid ${({ theme }) => theme.colors.accentColor2};
+`;
+
+export const StyledBreedName = styled.span`
+  position: absolute;
+  top: -31px;
+  left: 96px;
+  z-index: 10;
+
+  display: inline-block;
+  padding: 17px 20px 17px 20px;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.colors.textDark};
+  background: ${({ theme }) => theme.colors.content_background};
+
+  border-radius: 20px;
+`;
+
+export const StyledBreedStatus = styled.p`
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 19px;
+  margin-bottom: 20px;
+`;
+export const StyledBreedTemperament = styled.p`
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  span {
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.textDark};
+  }
+`;
+export const StyledBreedParametrs = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  p span {
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.textDark};
+  }
+`;

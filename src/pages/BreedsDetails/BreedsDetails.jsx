@@ -4,6 +4,9 @@ import { useLocation } from 'react-router';
 import {
   StyledBreedInfoWrapper,
   StyledBreedName,
+  StyledBreedParametrs,
+  StyledBreedStatus,
+  StyledBreedTemperament,
   StyledBreedsCount,
   StyledBreedsDetailCart,
   StyledImgWraper,
@@ -15,7 +18,13 @@ import PageName from 'components/PageName/PageName';
 
 import breed1 from '../../images/breed1.png';
 import breed2 from '../../images/breed2.png';
-const data = [{ img: breed1, name: 'cat1' }, { img: breed2 }];
+import breed3 from '../../images/cat.png';
+import Swiper from 'components/Swiper/Swiper';
+const data = [
+  { img: breed1, name: 'cat1' },
+  { img: breed2 },
+  { img: breed3, name: 'cat3' },
+];
 const BreedsDetails = () => {
   const location = useLocation();
   const backLinkHref = useRef(location.state?.from ?? '/');
@@ -30,38 +39,28 @@ const BreedsDetails = () => {
       </StyledLinkBackWrapper>
 
       <StyledBreedsDetailCart>
-        <StyledImgWraper>
-          <img src={data[selectedBreedsIndex].img} alt="" />
+        <Swiper data={data} />
 
-          {/* <StyledPagitationWrapper>
-            <span onClick={handelClick}></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </StyledPagitationWrapper> */}
-        </StyledImgWraper>
-
-        <StyledBreedName></StyledBreedName>
         <StyledBreedInfoWrapper>
-          <p>Family companion cat</p>
-          <p>
-            Temperament: Affectionate, Energetic, Alert, Curious, Playful,
-            Intelligent
-          </p>
-          <p>
-            <span>Origin: </span>
-            United States
-          </p>
-          <p>
-            {' '}
-            <span>Weight:</span>5 - 7 kgs
-          </p>
-          <p>
-            <span>Life : </span>
-            10 - 12 years
-          </p>
+          <StyledBreedName>Basenji</StyledBreedName>
+          <StyledBreedStatus>Family companion cat</StyledBreedStatus>
+          <StyledBreedTemperament>
+            <span> Temperament:</span> <br /> Affectionate, Energetic, Alert,
+            Curious, Playful, Intelligent
+          </StyledBreedTemperament>
+          <StyledBreedParametrs>
+            <p>
+              <span>Origin: </span> <br />
+              United States
+            </p>
+            <p>
+              <span>Weight:</span> <br /> 5 - 7 kgs
+            </p>
+            <p>
+              <span>Life : </span> <br />
+              10 - 12 years
+            </p>
+          </StyledBreedParametrs>
         </StyledBreedInfoWrapper>
       </StyledBreedsDetailCart>
     </PageLayout>
