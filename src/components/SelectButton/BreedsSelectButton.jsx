@@ -9,7 +9,6 @@ const options = [
 ];
 
 export default function SelectBreeds() {
-  console.log('components : ', components);
   const [selectedOption, setSelectedOption] = useState(options[0].value);
 
   const DropdownIndicator = props => {

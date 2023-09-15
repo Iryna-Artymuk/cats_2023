@@ -2,7 +2,10 @@
 import { styled } from 'styled-components';
 
 
-
+export const StyledLinkBackWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+`;
 export const StyledImg = styled.div`
   position: relative;
   width: 100%;

@@ -2,6 +2,7 @@ import {
   ButtonsWrapper,
   StyledActivityList,
   StyledImg,
+  StyledLinkBackWrapper,
   StyledLogInfo,
   StyledTime,
 } from './StyledVotingPage';
@@ -12,10 +13,21 @@ import defaultImg from '../../images/default.jpg';
 import Button from 'components/Button/Button';
 
 import PageLayout from '../PageLayout/PageLayout';
+import LinkBack from 'components/LinkBack/LinkBack';
+import { useLocation } from 'react-router';
+import { useRef } from 'react';
+import PageName from 'components/PageName/PageName';
 
 const VotingPage = () => {
+  const location = useLocation();
+  const backLinkHref = useRef(location.state?.from ?? '/');
   return (
     <PageLayout pageName="Voting">
+      <StyledLinkBackWrapper>
+        <LinkBack backLinkHref={backLinkHref} />
+        <PageName name="Voting" />
+      </StyledLinkBackWrapper>
+
       <StyledImg>
         <img src={catImg || defaultImg} alt="" />
         <ButtonsWrapper>

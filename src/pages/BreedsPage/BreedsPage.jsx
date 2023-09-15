@@ -13,9 +13,8 @@ import {
   StyledBreedsList,
   StyledImgWraper,
   StyledLimitWrapper,
-  StyledLinkBack,
+  StyledLinkBackWrapper,
   StyledOptions,
-  StyledPageName,
   StyledSelectWrapper,
 } from './StyledBreedspage';
 import { SortButton } from 'components/Button/StyledButton';
@@ -23,25 +22,21 @@ import { SortButton } from 'components/Button/StyledButton';
 import breed1 from '../../images/breed1.png';
 import breed2 from '../../images/breed2.png';
 import defaultImg from '../../images/default.jpg';
+import LinkBack from 'components/LinkBack/LinkBack';
+import PageName from 'components/PageName/PageName';
 
 const BreedsPage = () => {
   const location = useLocation();
   const backLinkHref = useRef(location.state?.from ?? '/');
+  console.log('backLinkHref : ', backLinkHref);
+
   return (
-    <PageLayout pageName="Breeds">
+    <PageLayout>
       <StyledOptions>
-        <div>
-          <StyledLinkBack to={backLinkHref.current}>
-            <span>
-              <svg width={24} height={24}>
-                <use
-                  xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#icon-arrow-back`}
-                />
-              </svg>
-            </span>
-          </StyledLinkBack>
-          <StyledPageName>Breeds</StyledPageName>
-        </div>
+        <StyledLinkBackWrapper>
+          <LinkBack backLinkHref={backLinkHref} />
+          <PageName name="Breeds" />
+        </StyledLinkBackWrapper>
 
         <StyledSelectWrapper>
           <SelectBreeds />
@@ -67,7 +62,11 @@ const BreedsPage = () => {
 
       <StyledBreedsList>
         <li>
-          <Link state={{ from: location }} to={ROUTES.BREEDSdetails}>
+          <Link
+            title=" link to breeds details"
+            state={{ from: location }}
+            to={ROUTES.BREEDSdetails}
+          >
             <StyledImgWraper>
               <div className="overlay">
                 <p>breds name</p>
