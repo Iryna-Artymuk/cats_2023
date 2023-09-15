@@ -28,7 +28,7 @@ export const StyledBreedsDetailCart = styled.div`
   justify-content: center;
   align-items: center;
   gap: 50px;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 `;
 export const StyledPagitationWrapper = styled.div`
   height: 30px;

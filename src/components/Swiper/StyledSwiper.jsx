@@ -7,20 +7,20 @@ export const StyledSwiperWrapper = styled.div`
 
   width: 295px;
   height: 166px;
-  border-radius: 20px;
-  overflow: hidden;
-  outline: 2px solid purple;
 `;
 export const StyledSwiperSlide = styled(SwiperSlide)`
   width: 100%;
   height: 100%;
   img {
+    position: relative;
     width: 295px;
     height: 166px;
+    border-radius: 20px;
+    cursor: pointer;
   }
 `;
 export const StyledSwiper = styled(Swiper)`
   width: 100%;
   height: 100%;
-  outline: 2px solid purple;
+  overflow: visible;
 `;

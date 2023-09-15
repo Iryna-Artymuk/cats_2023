@@ -16,7 +16,7 @@ export const Box = styled.div`
     width: 680px;
     margin-left: 65px;
   }
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
 `;
 
 export const StyledNavigationWrapper = styled.div`
@@ -35,5 +35,5 @@ export const StyledContentWrapper = styled.div`
   border-radius: 20px;
   margin-top: 10px;
   background: ${({ theme }) => theme.colors.content_background};
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 `;

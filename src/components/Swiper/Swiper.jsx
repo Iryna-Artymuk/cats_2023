@@ -19,14 +19,13 @@ const BreedsSwiper = function ({ data }) {
         pagination={{
           dynamicBullets: true,
           clickable: true,
+          dynamicMainBullets: 5,
         }}
-        modules={[Pagination, EffectFade, Autoplay]}
+        speed={800}
+        modules={[Pagination, EffectFade]}
         slidesPerView={1}
         effect={'fade'}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        loop={true}
       >
         {data.map(item => (
           <StyledSwiperSlide>

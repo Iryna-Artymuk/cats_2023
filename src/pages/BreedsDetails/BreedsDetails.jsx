@@ -24,6 +24,12 @@ const data = [
   { img: breed1, name: 'cat1' },
   { img: breed2 },
   { img: breed3, name: 'cat3' },
+  { img: breed1, name: 'cat1' },
+  { img: breed2 },
+  { img: breed3, name: 'cat3' },
+  { img: breed1, name: 'cat1' },
+  { img: breed2 },
+  { img: breed3, name: 'cat3' },
 ];
 const BreedsDetails = () => {
   const location = useLocation();

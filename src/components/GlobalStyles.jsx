@@ -100,4 +100,37 @@ svg:hover{
   fill: ${({ theme }) => theme.colors.colorWhite}
 }
 
+
+// swiper css  breeds page
+
+.swiper-pagination-bullet{
+  background-color:  ${({ theme }) => theme.colors.accentColor2} !important;
+     width:10px;
+     height:10px;
+     border-radius:50%;
+   
+     opacity: 1;
+     transform: scale(1)
+
+}
+
+.swiper-pagination-bullet-active{
+  background-color:  ${({ theme }) => theme.colors.accentColor1} !important;
+  opacity:1;
+ 
+}
+
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  width: auto !important;
+  bottom:-15px;
+
+  height: 30px;
+    background-color:  ${({ theme }) => theme.colors.content_background} ;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 `;
