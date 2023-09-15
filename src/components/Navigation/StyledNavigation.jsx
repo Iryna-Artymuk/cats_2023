@@ -161,7 +161,7 @@ export const StyledBurgerMenu = styled.div`
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 100;
   background-color: ${({ theme }) => {
     // console.log(' theme: ',  theme);
     return theme.colors.body_background;
