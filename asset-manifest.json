@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cats_2023/static/css/main.940b76b8.css",
-    "main.js": "/cats_2023/static/js/main.54094516.js",
+    "main.js": "/cats_2023/static/js/main.fd0d1a78.js",
     "static/media/girl-and-pet 1.png": "/cats_2023/static/media/girl-and-pet 1.1927e13f60069098098c.png",
     "static/media/breed1.png": "/cats_2023/static/media/breed1.e1fa353ab0c45b8752ef.png",
     "static/media/breed2.png": "/cats_2023/static/media/breed2.9cf4ad89954a068babe5.png",
@@ -12,10 +12,10 @@
     "static/media/pet-breeds.png": "/cats_2023/static/media/pet-breeds.f93666435f7dee0dbc91.png",
     "index.html": "/cats_2023/index.html",
     "main.940b76b8.css.map": "/cats_2023/static/css/main.940b76b8.css.map",
-    "main.54094516.js.map": "/cats_2023/static/js/main.54094516.js.map"
+    "main.fd0d1a78.js.map": "/cats_2023/static/js/main.fd0d1a78.js.map"
   },
   "entrypoints": [
     "static/css/main.940b76b8.css",
-    "static/js/main.54094516.js"
+    "static/js/main.fd0d1a78.js"
   ]
 }
