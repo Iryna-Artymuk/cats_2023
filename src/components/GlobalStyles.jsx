@@ -103,12 +103,63 @@ svg:hover{
 
 // swiper css  breeds page
 
+
+
+.swiper {
+  position:relative;
+ 
+  overflow:visible;
+  
+  width: 295px ;
+  height: 166px;
+
+
+
+ @media screen and (min-width: 768px) {
+   
+  width: 640px ;
+  height: 360px;
+  }
+}
+
+ .swiper-wrapper{
+ 
+ display:flex;
+ position: relative;
+}
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+}
+
+.imgWrapper{
+  width: 295px ;
+  height: 166px;
+border-radius:20px;
+overflow:hidden;
+
+ @media screen and (min-width: 768px) {
+   
+  width: 640px ;
+  height: 360px;
+  }
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 .swiper-pagination-bullet{
   background-color:  ${({ theme }) => theme.colors.accentColor2} !important;
-     width:10px;
-     height:10px;
+     width:10px !important;
+     height:10px !important;
      border-radius:50%;
-   
      opacity: 1;
      transform: scale(1)
 
@@ -117,14 +168,24 @@ svg:hover{
 .swiper-pagination-bullet-active{
   background-color:  ${({ theme }) => theme.colors.accentColor1} !important;
   opacity:1;
+  transform: scale(1);
  
 }
 
 
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
-  width: auto !important;
-  bottom:-15px;
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+  transform: scale(1);
+}
+.swiper-pagination-hidden{
+  display:none;
+}
 
+
+.swiper-pagination{
+  width: auto !important; 
+  position: absolute;
+  bottom: -15px !important ;
+left:50% !important;
   height: 30px;
     background-color:  ${({ theme }) => theme.colors.content_background} ;
     border-radius: 20px;
@@ -132,5 +193,8 @@ svg:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
+
+
+
 `;

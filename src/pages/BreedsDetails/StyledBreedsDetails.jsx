@@ -30,44 +30,28 @@ export const StyledBreedsDetailCart = styled.div`
   gap: 50px;
   /* outline: 2px solid blue; */
 `;
-export const StyledPagitationWrapper = styled.div`
-  height: 30px;
-  position: absolute;
-  bottom: -15px;
-  left: 103px;
-  z-index: 20;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  background: ${({ theme }) => theme.colors.content_background};
-  border-radius: 20px;
-  padding: 10px;
-  span {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.colors.accentColor1};
-  }
-`;
 export const StyledBreedInfoWrapper = styled.div`
   position: relative;
   width: 295px;
   padding: 20px;
   border-radius: 20px;
   border: 2px solid ${({ theme }) => theme.colors.accentColor2};
+
+  @media screen and (min-width: 768px) {
+    width: 640px;
+    height: 204px;
+  }
 `;
 
 export const StyledBreedName = styled.span`
   position: absolute;
-  top: -31px;
+  top: -40px;
   left: 96px;
   z-index: 10;
-
+  padding: 16px 20px;
   display: inline-block;
-  padding: 17px 20px 17px 20px;
+
   text-align: center;
 
   font-size: 20px;
@@ -76,14 +60,38 @@ export const StyledBreedName = styled.span`
   background: ${({ theme }) => theme.colors.content_background};
 
   border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 5px 40px;
+    left: 223px;
+    font-size: 36px;
+  }
 `;
 
 export const StyledBreedStatus = styled.p`
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  margin-top: 19px;
+
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+export const BreedsInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+
+    /* outline: 1px solid red; */
+  }
 `;
 export const StyledBreedTemperament = styled.p`
   font-weight: 400;
@@ -93,6 +101,13 @@ export const StyledBreedTemperament = styled.p`
     font-weight: 500;
     color: ${({ theme }) => theme.colors.textDark};
   }
+
+  @media screen and (min-width: 768px) {
+    width: 270px;
+    margin-bottom: 0px;
+  }
+
+  /* outline: 1px solid green; */
 `;
 export const StyledBreedParametrs = styled.div`
   display: flex;
@@ -106,4 +121,10 @@ export const StyledBreedParametrs = styled.div`
     font-weight: 500;
     color: ${({ theme }) => theme.colors.textDark};
   }
+
+  @media screen and (min-width: 768px) {
+    width: 270px;
+  }
+
+  /* outline: 1px solid green; */
 `;
