@@ -173,12 +173,12 @@ overflow:hidden;
 }
 
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+/* .swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
   transform: scale(1);
 }
 .swiper-pagination-hidden{
   display:none;
-}
+} */
 
 
 .swiper-pagination{

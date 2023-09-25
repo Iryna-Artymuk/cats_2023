@@ -55,7 +55,7 @@ const BreedsDetails = () => {
           pagination={{
             dynamicBullets: true,
             clickable: true,
-            dynamicMainBullets: 1,
+            dynamicMainBullets: 5,
           }}
           autoplay={{
             delay: 3000,
